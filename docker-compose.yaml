@@ -16,8 +16,8 @@ services:
     ports:
       - 9090:9090
     links:
-      - cadvisor:cadvisor
       - node-exporter:node-exporter
+#      - cadvisor:cadvisor
 
   node-exporter:
     image: prom/node-exporter:latest
